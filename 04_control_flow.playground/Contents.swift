@@ -23,3 +23,29 @@ let num2 = 5
 if num2 > num1 {
     print("num2 is greater than num1")
 }
+
+// 74 optional
+// 76 nil
+// 79 optional binding
+
+var str:String?
+str = "hello"
+print(str)
+print(Int("5"))
+print(Int("hello"))
+
+if let result = str {
+    print(result)
+}
+print(str!)
+
+if let result = Int("hello") {
+    print(result)
+} else {
+    print("no result")
+}
+
+
+
+
+
