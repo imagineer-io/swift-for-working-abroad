@@ -30,4 +30,43 @@ class Human {
 
 var jake = Human()
 jake.name
-jake.describe()
+//jake.describe()
+
+var marco = Human()
+marco.name = "marco"
+marco.describe()
+
+
+class NewHuman {
+    var name:String?
+    var age:Int?
+    var address:String?
+    var job:String?
+    var gender:String?
+    
+    init(name:String, age:Int, address:String, job:String, gender:String) {
+        self.name = name
+        self.age = age
+        self.address = address
+        self.job = job
+        self.gender = gender
+    }
+    
+    func describe() {
+        print("\(name!) is \(age!) years old.")
+        print("\(gender!) lives in \(address!).")
+        print("\(gender!) is a \(job!).")
+    }
+}
+
+var scott = NewHuman(name: "scott", age: 20, address: "Seoul", job: "student", gender: "He")
+
+scott.describe()
+
+
+
+
+
+
+
+
