@@ -60,13 +60,21 @@ class NewHuman {
 }
 
 var scott = NewHuman(name: "scott", age: 20, address: "Seoul", job: "student", gender: "He")
+//scott.describe()
 
-scott.describe()
+class GentleMan: NewHuman {
+    override func describe() {
+        print("Hello, nice to meet you. My name is \(name!)")
+    }
+}
 
+var tom = GentleMan(name: "tom", age: 20, address: "Seoul", job: "student", gender: "He")
+tom.describe()
+tom.name
 
-
-
-
+//struct HemanStruct {
+//    <#fields#>
+//}
 
 
 
